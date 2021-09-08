@@ -9,7 +9,7 @@
     <button (click)="eliminar()" class="btn btn-danger" [disabled] = "inactivarEditElimi">Eliminar</button>
 
     <div class="form-group mt-3">
-      <input type="text" [(ngModel)]="usuarioSeleccionado.id" placeholder="" class="form-control">
+      <input type="text" [(ngModel)]="usuarioSeleccionado.id" placeholder="" class="form-control" disabled>
     </div>
     <div class="form-group mt-3">
       <input type="text" [(ngModel)]="usuarioSeleccionado.nombre" placeholder="ingrese un nombre" class="form-control">
