@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-body">
+    <div class="card-title">
+      Información del Usuario
+    </div>
+
+    <button (click)="guardar()" class="btn btn-primary btn-space" [disabled] = "inactivarGuardar">Guardar</button>
+    <button (click)="editar()" class="btn btn-primary ml-2 btn-space" [disabled] = "inactivarEditElimi">Editar</button>
+    <button (click)="eliminar()" class="btn btn-danger" [disabled] = "inactivarEditElimi">Eliminar</button>
+
+    <div class="form-group mt-3">
+      <input type="text" [(ngModel)]="usuarioSeleccionado.id" placeholder="" class="form-control">
+    </div>
+    <div class="form-group mt-3">
+      <input type="text" [(ngModel)]="usuarioSeleccionado.nombre" placeholder="ingrese un nombre" class="form-control">
+    </div>
+    <div class="form-group mt-3">
+      <input type="text" [(ngModel)]="usuarioSeleccionado.rol" placeholder="ingrese un rol" class="form-control">
+    </div>
+    <div class="form-group mt-3">
+      <input type="text" [(ngModel)]="usuarioSeleccionado.estado" placeholder="" class="form-control">
+    </div>
+  </div>
+</div>

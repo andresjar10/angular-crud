@@ -1,0 +1,22 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Andres Felipe Jaramillo",
+      "rol": "Administrador",
+      "estado": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Luisa Castro Cardona",
+      "rol": "Auditor",
+      "estado": 1
+    },
+    {
+      "id": 3,
+      "nombre": "Teresa Valdes",
+      "rol": "Auditor",
+      "estado": 1
+    }
+  ]
+}

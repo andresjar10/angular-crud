@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-body">
+    <div class="card-title">
+      Parametros de busqueda
+    </div>
+
+    <button (click)="consultar()" class="btn btn-primary btn-space">Consultar</button>
+    <button (click)="limpiar()" class="btn btn-primary ml-2 btn-space">Limpiar</button>
+
+    <div class="form-group mt-3">
+      <input type="text" [(ngModel)]="cadena" placeholder="" class="form-control">
+    </div>
+  </div>
+</div>

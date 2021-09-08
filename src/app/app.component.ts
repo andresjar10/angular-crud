@@ -1,4 +1,11 @@
 import { Component } from '@angular/core';
+import { Usuario } from './modelo/Usuario';
+
+/*import { HttpClient } from '@angular/common/http';
+
+import { Usuario } from './modelo/Usuario';
+import { ServiciosUsuario } from './servicios/ServiciosUsuario';
+*/
 
 @Component({
   selector: 'app-root',
@@ -6,5 +13,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-crud-code';
+
+  arregloUsuarios: Usuario[] = [];
+  usuarioSeleccionado: Usuario = new Usuario();
+
+  inactivarGuardar = false;
+  inactivarEditElimi = true;
+  usuarioBuscado = '';
+  cantidadUsuarios = 0;
+
+  constructor() {
+
+  }
+
+  ngOnInit() {
+
+  }
+
 }
